@@ -1,5 +1,10 @@
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  "Web Developer"
+  haml :index
+end
+
+get '/about' do
+  'A little about me.'
 end
