@@ -8,9 +8,33 @@
     /[if IE]
       %link{:rel=>"stylesheet", :href=>"stylesheets/blueprint/ie.css", :type=>"text/css", :media=>"screen, projection"}
 
+    %link{:rel=>"stylesheet", :href=>"stylesheets/menu/menu.css", :type=>"text/css", :media=>"screen, projection"}
     %body
       .container
         .span-24
           %img{:src => "images/logo_me.jpg"}
           
+        .span-24
+          &nbsp;
+          
+        .span-1
+          &nbsp;
+          
+        .span-21.back_menu
+          %ul#menu
+            %li 
+              %a{:href=>"/", :target=>"_self", :title=>"Home"} Home
+            %li 
+              %a{:href=>"/skills", :target=>"_self", :title=>"Skills"} Skills
+            %li 
+              %a{:href=>"/work", :target=>"_self", :title=>"Work"} Work
+            %li 
+              %a{:href=>"/contact", :target=>"_self", :title=>"Contact"} Contact
+
+        .span-1.last
+          &nbsp;
+
+        .span-24
+          &nbsp;
+
         =yield
