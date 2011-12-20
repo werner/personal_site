@@ -5,6 +5,14 @@ get '/' do
   haml :index
 end
 
-get '/about' do
-  'A little about me.'
+get '/skills' do
+  haml :skills
+end
+
+get '/work' do
+  haml :work
+end
+
+get '/contact' do
+  haml :contact
 end
