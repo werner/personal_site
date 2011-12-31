@@ -1,2 +1,63 @@
-.span-24
-  A Web Developer with experience in database applications, using the latest technologies related with most popular frameworks.
+!!! XML
+!!!
+%html
+  %head
+    %title Web Developer
+    %link{:rel => "stylesheet", :href => "stylesheets/blueprint/screen.css", :type => "text/css" , :media =>"screen, projection"}
+    %link{:rel=>"stylesheet", :href=>"stylesheets/blueprint/print.css", :type=>"text/css", :media => "print"} 
+    /[if IE]
+      %link{:rel=>"stylesheet", :href=>"stylesheets/blueprint/ie.css", :type=>"text/css", :media=>"screen, projection"}
+
+    %link{:rel=>"stylesheet", :href=>"stylesheets/menu/menu.css", :type=>"text/css", :media=>"screen, projection"}
+    %link{:rel => "stylesheet", :href => "javascripts/booklet/jquery.booklet.1.2.0.css", :type => "text/css" , :media =>"screen, projection"}
+    %link{:rel => "stylesheet", :href => "stylesheets/style.css", :type => "text/css" , :media =>"screen, projection"}
+  %body
+    .container
+      .span-24
+        .logo-name
+          werner Echezuría
+        
+      .span-24
+        &nbsp;
+                
+      .span-21.back_menu
+        %ul#menu
+          %li
+            %a{:href=>"#", :title=>"Home", :id => "home"} Home
+          %li
+            %a{:href=>"#", :title=>"Skills", :id => "skills"} Skills
+          %li
+            %a{:href=>"#", :title=>"Work", :id => "work"} Work
+          %li
+            %a{:href=>"#", :title=>"Contact", :id => "contact"} Contact
+
+      .span-1.last
+        &nbsp;
+
+      .span-24
+        .book_wrapper
+        
+          %a#next_page_button
+          %a#prev_page_button
+
+          #loading.loading Loading pages...
+
+          #mybook{:style => "display:none;"}
+            
+            .b-load
+              %div
+                = partial(:home)
+              %div
+                = partial(:skills)
+              %div
+                = partial(:work)
+              %div
+                = partial(:contact)
+    
+    %script{:type => "text/javascript", :src=> "javascripts/jquery-1.7.1.min.js"}
+    %script{:type => "text/javascript", :src=> "javascripts/jquery.easing.1.3.js"}
+    %script{:type => "text/javascript", :src=> "javascripts/jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"}
+    %script{:type => "text/javascript", :src=> "javascripts/booklet/jquery.booklet.1.2.0.min.js"}
+    %script{:type => "text/javascript", :src=> "app.js"}
+    %script{:type => "text/javascript", :src=> "links.js"}
+    
