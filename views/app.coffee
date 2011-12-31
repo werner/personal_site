@@ -6,6 +6,14 @@ $mybook_images = $mybook.find "img"
 cnt_images = $mybook_images.length
 loaded = 0
 
+Cufon.replace('.logo-name', 
+  fontFamily:'Brush Script Std'
+)
+
+Cufon.replace('.logo-developer', 
+  fontFamily:'Agency FB'
+)
+
 $mybook_images.each ->
   $img = $(this)
   source = $img.attr("src")
@@ -55,5 +63,5 @@ $mybook_images.each ->
 
         after: ->
 
-      #Cufon.refresh()
+      Cufon.refresh()
   ).attr "src", source
