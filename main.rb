@@ -8,6 +8,7 @@ class Main < Sinatra::Base
   helpers Sinatra::Partials
   
   set :views, 'app/views'
+  set :port, 58031
   
   get '/' do
     haml :index

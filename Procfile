@@ -1,1 +1,1 @@
-web: bundle exec ruby main.rb -p 5000
+web: bundle exec ruby main.rb
