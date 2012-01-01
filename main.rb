@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'haml'
-require 'coffee-script'
 require 'barista'
 require './lib/partials'
 
