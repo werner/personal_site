@@ -2,38 +2,39 @@ require 'sinatra'
 require 'haml'
 require 'coffee-script'
 require 'pony'
+require 'barista'
 require './lib/partials'
 
-helpers Sinatra::Partials
-
-get '/' do
-  haml :index
-end
-
-get '/app.js' do
-  coffee :app
-end
-
-get '/links.js' do
-  coffee :links
-end
-
-post '/contact' do
-  Pony.options = {
-    :via => :smtp,
-    :via_options => {
-      :address => 'smtp.sendgrid.net',
-      :port => '587',
-      :domain => 'heroku.com',
-      :user_name => ENV['SENDGRID_USERNAME'],
-      :password => ENV['SENDGRID_PASSWORD'],
-      :authentication => :plain,
-      :enable_starttls_auto => true
+class Main < Sinatra::Base
+  register Barista::Integration::Sinatra
+  helpers Sinatra::Partials
+  
+  set :views, 'app/views'
+  
+  get '/' do
+    haml :index
+  end
+  
+  post '/contact' do
+    Pony.options = {
+      :via => :smtp,
+      :via_options => {
+        :address => 'smtp.sendgrid.net',
+        :port => '587',
+        :domain => 'heroku.com',
+        :user_name => ENV['SENDGRID_USERNAME'],
+        :password => ENV['SENDGRID_PASSWORD'],
+        :authentication => :plain,
+        :enable_starttls_auto => true
+      }
     }
-  }
- 
-  Pony.mail :to => 'werner_a_e@yahoo.es',
-            :from => params[:message][:mail],
-            :subject => 'Name: ' + params[:message][:name] + ', send it from the personal site ',
-            :body =>  params[:message][:body]
+   
+    Pony.mail :to => 'werner_a_e@yahoo.es',
+              :from => params[:message][:mail],
+              :subject => 'Name: ' + params[:message][:name] + ', send it from the personal site ',
+              :body =>  params[:message][:body]
+  end
 end
+
+Barista.compile_all!
+Main.run!
