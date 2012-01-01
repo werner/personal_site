@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'haml'
 require 'coffee-script'
-require 'pony'
 require 'barista'
 require './lib/partials'
 
@@ -16,6 +15,7 @@ class Main < Sinatra::Base
   end
   
   post '/contact' do
+    require 'pony'
     Pony.options = {
       :via => :smtp,
       :via_options => {
