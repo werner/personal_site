@@ -1,6 +1,19 @@
 .span-24
   %img{:src => "images/phone.png"}
 
-.span-24
-  email: werner_a_e@yahoo.es
-  
+.span-9
+  %form{:name => "form", :id => "form", :action => "/contact", :method => "post", :enctype => "text/plain"}
+    %fieldset
+      %label{:for => "message[name]"} Name:
+      %br
+      %input{:type => "text", :name => "message[name]", :class => "text"}
+      %br
+      %label{:for => "message[mail]"} E-Mail:
+      %br
+      %input{:type => "text", :name => "message[mail]", :class => "text"}
+      %br
+      %label{:for => "message[body]"} Message:
+      %br
+      %textarea{:name => "message[body]"}
+      %br
+      %input{:type => "submit", :value => "Send", :class => "fg-button ui-state-default ui-corner-all"}

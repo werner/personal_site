@@ -6,11 +6,11 @@ $mybook_images = $mybook.find "img"
 cnt_images = $mybook_images.length
 loaded = 0
 
-Cufon.replace('.logo-name', 
+Cufon.replace('.logo-name,.brush-font', 
   fontFamily:'Brush Script Std'
 )
 
-Cufon.replace('.logo-developer', 
+Cufon.replace('.logo-developer,.subtitle-style', 
   fontFamily:'Agency FB'
 )
 

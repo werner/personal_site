@@ -8,35 +8,24 @@
     /[if IE]
       %link{:rel=>"stylesheet", :href=>"stylesheets/blueprint/ie.css", :type=>"text/css", :media=>"screen, projection"}
 
-    %link{:rel=>"stylesheet", :href=>"stylesheets/menu/menu.css", :type=>"text/css", :media=>"screen, projection"}
     %link{:rel => "stylesheet", :href => "javascripts/booklet/jquery.booklet.1.2.0.css", :type => "text/css" , :media =>"screen, projection"}
     %link{:rel => "stylesheet", :href => "stylesheets/style.css", :type => "text/css" , :media =>"screen, projection"}
+    %link{:rel => "stylesheet", :href => "stylesheets/links.css", :type => "text/css" , :media =>"screen, projection"}
+    %link{:rel => "stylesheet", :href => "stylesheets/booklet.css", :type => "text/css" , :media =>"screen, projection"}
   %body
     .container
-      .span-10
-        .logo-name
-          Werner
-          %br
-          Echezuría
 
-      .span-14.last
+      .span-24
         .menu
           %ul#menu
             %li
-              %a{:href=>"#", :title=>"Home", :id => "home"} Home
+              %a{:href=>"#", :title=>"Home", :id => "home", :class => "menu"}
             %li
-              %a{:href=>"#", :title=>"Skills", :id => "skills"} Skills
+              %a{:href=>"#", :title=>"Skills", :id => "skills", :class => "menu"}
             %li
-              %a{:href=>"#", :title=>"Work", :id => "work"} Work
+              %a{:href=>"#", :title=>"Work", :id => "work", :class => "menu"}
             %li
-              %a{:href=>"#", :title=>"Contact", :id => "contact"} Contact
-
-        
-      .span-24
-        .logo-developer
-          Web Developer
-                
-      /.span-21.back_menu
+              %a{:href=>"#", :title=>"Contact", :id => "contact", :class => "menu"}
 
       .span-1.last
         &nbsp;
@@ -53,11 +42,35 @@
             
             .b-load
               %div
+                .span-10
+                  .logo-name
+                    Werner Echezuría
+                .span-14.last
+                .span-24
+                  .logo-developer
+                    Web Developer
+              %div
+                .span-24
+                  .brush-font.title-style
+                    Home
+              %div
                 = partial(:home)
+              %div
+                .span-24
+                  .brush-font.title-style
+                    Skills
               %div
                 = partial(:skills)
               %div
+                .span-24
+                  .brush-font.title-style
+                    Work
+              %div
                 = partial(:work)
+              %div
+                .span-24
+                  .brush-font.title-style
+                    Contact
               %div
                 = partial(:contact)
     
