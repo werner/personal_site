@@ -7,7 +7,7 @@ Cufon.replace('.logo-name,.brush-font',
   fontFamily:'Brush Script Std'
 )
 
-Cufon.replace('.logo-developer,.subtitle-style', 
+Cufon.replace('.logo-developer,.subtitle-style,.b-counter', 
   fontFamily:'Agency FB'
 )
 

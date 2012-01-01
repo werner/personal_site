@@ -32,3 +32,30 @@ a#work {
 a#contact {
     background:url(../images/phone_s.png);
 }
+
+.social_icons_group {
+    float: right;
+}
+
+a.social_icons {
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+}
+
+.submit_button {
+    float: left;    
+}
+
+a#facebook_icon {
+    background:url(../images/facebook.png);    
+}
+
+a#linkedin_icon {
+    background:url(../images/linkedin.png);    
+}
+
+a#twitter_icon {
+    background:url(../images/twitter.png);    
+}
