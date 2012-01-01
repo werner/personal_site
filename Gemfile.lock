@@ -37,8 +37,6 @@ PLATFORMS
 
 DEPENDENCIES
   barista
-  coffee-script
-  execjs
   haml
   pony
   sinatra
