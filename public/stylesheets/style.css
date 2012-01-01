@@ -7,11 +7,13 @@ body{
 
 .logo-name {
     margin-top: 10px;
+    margin-left: 20px;
     font-size: 72px;
     color: #FA6900;
 }
 
 .logo-developer {
+    margin-left: 20px;
     font-size: 36px;
     font-weight: bold;
     color: #4FAEBA;
@@ -22,6 +24,8 @@ body{
 }
 
 .title-style {
+    margin-top: 20px;
+    margin-left: 20px;
     font-size: 48px;    
     color: #FA6900;
 }
@@ -29,6 +33,10 @@ body{
 .subtitle-style {
     font-weight: bold;
     font-size: 24px;    
+    color: #4FAEBA;    
+}
+
+.subtitle-style a {
     color: #4FAEBA;    
 }
 
@@ -58,23 +66,10 @@ a.fg-button:visited  {
 
 .fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
 
-a.fg-button { float:left; }
+a.fg-button { float:left;font-size: 1em;   }
 
 /* remove extra button width in IE */
 button.fg-button { width:auto; overflow:visible; }
 
-.fg-button-icon-left { padding-left: 2.1em; }
-.fg-button-icon-right { padding-right: 2.1em; }
-.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
-.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
-
-.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }   /* solo icon buttons must have block properties for the text-indent to work */ 
-
-.fg-buttonset { float:left; }
-.fg-buttonset .fg-button { float: left; }
 .fg-buttonset-single .fg-button, 
 .fg-buttonset-multi .fg-button { margin-right: -1px;}
-
-.fg-toolbar { padding: .5em; margin: 0;  }
-.fg-toolbar .fg-buttonset { margin-right:1.5em; padding-left: 1px; }
-.fg-toolbar .fg-button { font-size: 1em;  }
