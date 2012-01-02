@@ -11,6 +11,8 @@ Cufon.replace('.logo-developer,.subtitle-style,.b-counter',
   fontFamily:'Agency FB'
 )
 
+Cufon.now()
+
 $("#form").ajaxForm ->
   success:
     $("#form").reset()

@@ -77,3 +77,7 @@ button.fg-button { width:auto; overflow:visible; }
 
 .fg-buttonset-single .fg-button, 
 .fg-buttonset-multi .fg-button { margin-right: -1px;}
+
+.cufon-loading {
+    visibility: hidden !important;
+}

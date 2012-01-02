@@ -14,6 +14,8 @@
     fontFamily: 'Agency FB'
   });
 
+  Cufon.now();
+
   $("#form").ajaxForm(function() {
     return {
       success: $("#form").reset()

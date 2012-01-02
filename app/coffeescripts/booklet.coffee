@@ -55,5 +55,5 @@ $mybook_images.each ->
 
         after: ->
 
-      Cufon.refresh()
   ).attr "src", source
+  

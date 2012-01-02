@@ -25,7 +25,7 @@
         $loading.hide();
         $bttn_next.show();
         $bttn_prev.show();
-        $mybook.show().booklet({
+        return $mybook.show().booklet({
           name: null,
           width: 800,
           height: 500,
@@ -64,7 +64,6 @@
           before: function() {},
           after: function() {}
         });
-        return Cufon.refresh();
       }
     }).attr("src", source);
   });
