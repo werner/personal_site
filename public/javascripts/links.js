@@ -17,11 +17,11 @@
   });
 
   $("#spain").click(function() {
-    return window.location.replace("http://localhost:3000/?locale=es");
+    return window.location.replace("http://werner.heroku.com/?locale=es");
   });
 
   $("#usa").click(function() {
-    return window.location.replace("http://localhost:3000/?locale=en");
+    return window.location.replace("http://werner.heroku.com/?locale=en");
   });
 
 }).call(this);

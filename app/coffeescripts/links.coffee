@@ -11,7 +11,7 @@ $("#contact").click ->
   $("#mybook").booklet 8
   
 $("#spain").click ->
-  window.location.replace("http://localhost:3000/?locale=es")
+  window.location.replace("http://werner.heroku.com/?locale=es")
   
 $("#usa").click ->
-  window.location.replace("http://localhost:3000/?locale=en")
+  window.location.replace("http://werner.heroku.com/?locale=en")
