@@ -9,3 +9,9 @@ $("#work").click ->
 
 $("#contact").click ->
   $("#mybook").booklet 8
+  
+$("#spain").click ->
+  window.location.replace("http://localhost:3000/?locale=es")
+  
+$("#usa").click ->
+  window.location.replace("http://localhost:3000/?locale=en")

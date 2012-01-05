@@ -33,6 +33,14 @@ a#contact {
     background:url(../images/phone_s.png);
 }
 
+a#spain {
+    background:url(../images/es.png) no-repeat;    
+}
+
+a#usa {
+    background:url(../images/usa.png) no-repeat;
+}
+
 .social_icons_group {
     float: right;
 }

@@ -16,4 +16,12 @@
     return $("#mybook").booklet(8);
   });
 
+  $("#spain").click(function() {
+    return window.location.replace("http://localhost:3000/?locale=es");
+  });
+
+  $("#usa").click(function() {
+    return window.location.replace("http://localhost:3000/?locale=en");
+  });
+
 }).call(this);

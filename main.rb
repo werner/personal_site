@@ -3,31 +3,23 @@ require 'haml'
 require 'barista'
 require 'pony'
 require 'sinatra/minify'
-require 'sinatra/i18n'
+require 'sinatra/r18n'
 require './lib/partials'
 
 class Main < Sinatra::Base
   register Barista::Integration::Sinatra
   register Sinatra::Minify
-  register Sinatra::I18n
+  register Sinatra::R18n
 
   helpers Sinatra::Partials
-  
-  #Conf for i18n
-  root = File.dirname(__FILE__)
-  set :locales, %w[File.join(root, 'config/en.yml') File.join(root, 'config/es.yml')]
-  set :default_locale, 'es'
-  set :locale_pattern, /^\/?(#{Regexp.union(settings.locales)})(\/.+)$/
-  
-  helpers do
-    def locale
-      @locale || settings.default_locale
-    end
-  end  
+
+  #Conf for r18n
+  set :root, File.dirname(__FILE__)
+  set :translations,   './config/locales'
   
   before do
-    @locale, request.path_info = $1, $2 if request.path_info =~ settings.locale_pattern
-  end  
+    session[:locale] = params[:locale] if params[:locale]
+  end
   
   #Conf for minify
   set :js_path, 'public/javascripts'
@@ -36,11 +28,12 @@ class Main < Sinatra::Base
   set :css_path, 'public/stylesheets'
   set :css_url,  '/stylesheets'  
 
+  #use the minify version in development too
   enable :force_minify
     
   #In order to set the views inside app
   set :views, 'app/views'
-     
+
   get '/' do
     haml :index
   end
