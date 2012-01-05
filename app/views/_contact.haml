@@ -4,19 +4,22 @@
 .span-9
   %form{:name => "form", :id => "form", :action => "/contact", :method => "post", :enctype => "text/plain"}
     %fieldset
-      %label{:for => "message[name]"} Name
+      %label{:for => "message[name]"} 
+        =t("name")
       %br
       %input{:type => "text", :name => "message[name]", :class => "text"}
       %br
-      %label{:for => "message[mail]"} E-Mail
+      %label{:for => "message[mail]"} 
+        =t("e-mail")
       %br
       %input{:type => "text", :name => "message[mail]", :class => "text"}
       %br
-      %label{:for => "message[body]"} Message
+      %label{:for => "message[body]"} 
+        =t("msg")
       %br
       %textarea{:name => "message[body]"}
       %br
-      %input{:type => "submit", :value => "Send", :class => "fg-button submit_button"}
+      %input{:type => "submit", :value => t("send"), :class => "fg-button submit_button"}
       .social_icons_group
         %a{:href=>"https://www.facebook.com/werner.echezuria", :id => "facebook_icon", :class => "social_icons"}
         %a{:href=>"http://www.linkedin.com/in/wernerechezuria", :id => "linkedin_icon", :class => "social_icons"}

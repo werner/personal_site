@@ -1,2 +1,23 @@
 en:
   profession: Web Developer
+  home: Home
+  skills: Skills
+  work: Work
+  contact: Contact
+  home_title: Description
+  home_body: A Web Developer with experience in database applications, using the latest technologies related with most popular frameworks.
+  ror_body: Develop web applications using Agile Methodologies.
+  php_body: Experience in Wordpress and CodeIgniter applications.
+  c_sharp_body: Desktop software and ASP .NET sites.
+  javascript_body: I've worked with JQuery, ExtJS and CoffeeScript.
+  yabsca_body: "Ruby on Rails and ExtJS. <br /> user: admin, password: 12345."
+  inversioneshm_body: Wordpress Site.
+  fuzzy_body: PostgreSQL extension.
+  myself_head: This Site
+  myself_body: Sinatra, CoffeScript, JQuery and Cufon.
+  php_developer: PHP Developer
+  ruby_developer: Ruby Developer
+  name: Name
+  e-mail: E-mail
+  msg: Message
+  send: Send

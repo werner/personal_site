@@ -1,0 +1,23 @@
+en:
+  profession: Programador Web
+  home: Inicio
+  skills: Habilidades
+  work: Trabajo
+  contact: Contacto
+  home_title: Descripción
+  home_body: Programador Web con experiencia en aplicaciones de base de datos, usando las últimas tecnologías relacionadas con los frameworks más populares.
+  ror_body: Desarrollo de aplicaciones web usando metodologías ágiles.
+  php_body: experiencia en aplicaciones con CodeIgniter y Wordpress.
+  c_sharp_body: Aplicaciones de Escritorio y Sitios ASP .NET.
+  javascript_body: He trabajado con JQuery, ExtJS y CoffeeScript.
+  yabsca_body: "Ruby on Rails y ExtJS. <br /> usuario: admin, contraseña: 12345."
+  inversioneshm_body: Sitio Wordpress.
+  fuzzy_body: Extensión PostgreSQL.
+  myself_head: Este Sitio
+  myself_body: Sinatra, CoffeScript, JQuery, Cufon, etc.
+  php_developer: Programador PHP
+  ruby_developer: Programador Ruby
+  name: Nombre
+  e-mail: Correo Electrónico
+  msg: Mensaje
+  send: Enviar

@@ -18,13 +18,13 @@
         .menu
           %ul#menu
             %li
-              %a{:href=>"#", :title=>"Home", :id => "home", :class => "menu"}
+              %a{:href=>"#", :title=>t("home"), :id => "home", :class => "menu"}
             %li
-              %a{:href=>"#", :title=>"Skills", :id => "skills", :class => "menu"}
+              %a{:href=>"#", :title=>t("skills"), :id => "skills", :class => "menu"}
             %li
-              %a{:href=>"#", :title=>"Work", :id => "work", :class => "menu"}
+              %a{:href=>"#", :title=>t("work"), :id => "work", :class => "menu"}
             %li
-              %a{:href=>"#", :title=>"Contact", :id => "contact", :class => "menu"}
+              %a{:href=>"#", :title=>t("contact"), :id => "contact", :class => "menu"}
 
       .span-1.last
         &nbsp;
@@ -48,29 +48,29 @@
                   .span-14.last
                   .span-24
                     .logo-developer
-                      Web Developer
+                      =t('profession')
               %div
                 .span-24
                   .brush-font.title-style
-                    Home
+                    =t('home')
               %div
                 = partial(:home)
               %div
                 .span-24
                   .brush-font.title-style
-                    Skills
+                    =t('skills')
               %div
                 = partial(:skills)
               %div
                 .span-24
                   .brush-font.title-style
-                    Work
+                    =t('work')
               %div
                 = partial(:work)
               %div
                 .span-24
                   .brush-font.title-style
-                    Contact
+                    =t('contact')
               %div
                 = partial(:contact)
     
