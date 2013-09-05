@@ -1,12 +1,10 @@
-# config/assets.yml
 js:
   base:
-    - modernizr.js
     - jquery.form.js
     - app.js
-    - links.js
+    - modernizr.js
+    - respond.js
     
 css:
   base:
     - style.css
-    - links.css
