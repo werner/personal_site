@@ -1,20 +1,8 @@
+/* DO NOT MODIFY. This file was compiled Thu, 05 Sep 2013 16:02:28 GMT from
+ * /home/werner/Documentos/Proyectos/personal_site/app/coffeescripts/links.coffee
+ */
+
 (function() {
-
-  $("#home").click(function() {
-    return $("#mybook").booklet(2);
-  });
-
-  $("#skills").click(function() {
-    return $("#mybook").booklet(4);
-  });
-
-  $("#work").click(function() {
-    return $("#mybook").booklet(6);
-  });
-
-  $("#contact").click(function() {
-    return $("#mybook").booklet(8);
-  });
 
   $("#spain").click(function() {
     return window.location.replace("http://werner.heroku.com/?locale=es");

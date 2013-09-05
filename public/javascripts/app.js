@@ -1,20 +1,8 @@
+/* DO NOT MODIFY. This file was compiled Thu, 05 Sep 2013 16:02:28 GMT from
+ * /home/werner/Documentos/Proyectos/personal_site/app/coffeescripts/app.coffee
+ */
+
 (function() {
-
-  jQuery.fn.reset = function() {
-    return $(this).each(function() {
-      return this.reset();
-    });
-  };
-
-  Cufon.replace('.logo-name,.brush-font', {
-    fontFamily: 'Brush Script Std'
-  });
-
-  Cufon.replace('.logo-developer,.subtitle-style,.b-counter', {
-    fontFamily: 'Agency FB'
-  });
-
-  Cufon.now();
 
   $("#form").ajaxForm(function() {
     return {
