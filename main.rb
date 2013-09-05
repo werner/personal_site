@@ -15,7 +15,7 @@ class Main < Sinatra::Base
 
   #Conf for r18n
   set :root, File.dirname(__FILE__)
-  set :translations,   './config/locales'
+  R18n.default_places { './config/locales' }
   
   before do
     session[:locale] = params[:locale] if params[:locale]
