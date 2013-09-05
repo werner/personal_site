@@ -1,6 +1,6 @@
 desc "Builds the minified CSS and JS assets."
 task :minify do
-  require './main.rb'   # <= change this
+  require './main.rb'
   puts "Building..."
 
   files = Sinatra::Minify::Package.build(Main)  # <= change this
