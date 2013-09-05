@@ -17,22 +17,6 @@ a.menu {
     display:block;
 }
 
-a#home {
-    background:url(../images/house_s.png);
-}
-
-a#skills {
-    background:url(../images/archives_s.png);
-}
-
-a#work {
-    background:url(../images/gear_s.png);
-}
-
-a#contact {
-    background:url(../images/phone_s.png);
-}
-
 .social_icons_group {
     float: right;
 }
@@ -46,20 +30,4 @@ a.social_icons {
 
 .submit_button {
     float: left;    
-}
-
-a#facebook_icon {
-    background:url(../images/facebook.png);    
-}
-
-a#linkedin_icon {
-    background:url(../images/linkedin.png);    
-}
-
-a#twitter_icon {
-    background:url(../images/twitter.png);    
-}
-
-a#github_icon {
-    background:url(../images/github.png);    
 }
