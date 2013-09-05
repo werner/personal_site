@@ -15,56 +15,96 @@
 
     .container
 
-      .row
-        .col-xs-12
-          %h1 Werner Echezuría
-      .row
-        .col-xs-12
-          %h3=t.profession
+      %article
+        .row
+          .col-xs-12
+            %h1 Werner Echezuría
+        .row
+          .col-xs-12
+            %h3=t.profession
 
+      %article
+        .row
+          .col-xs-12
+            =t.home
+        .row
+          .col-xs-12
+            =t.home_title
+            %p
+              =t.home_body
 
-      .span-24
-        .book_wrapper
-        
-          %a#next_page_button
-          %a#prev_page_button
+      %article
+        .row
+          .col-xs-12
+            =t.skills
+        .row
+          .col-xs-12
+            Ruby on Rails
+            %p
+              =t.ror_body
+        .row
+          .col-xs-12
+            PHP
+            %p
+              =t.php_body
+        .row
+          .col-xs-12
+            JavaScript
+            %p
+              =t.javascript_body
 
-          #mybook{:style => "display:none;"}
-            
-            .b-load
-              %div
-                #logos
-                  .span-10
-                    .logo-name
-                  .span-14.last
-                  .span-24
-                    .logo-developer
-                      =t.profession
-              %div
-                .span-24
-                  .brush-font.title-style
-                    =t.home
-              %div
-                = partial(:home)
-              %div
-                .span-24
-                  .brush-font.title-style
-                    =t.skills
-              %div
-                = partial(:skills)
-              %div
-                .span-24
-                  .brush-font.title-style
-                    =t.work
-              %div
-                = partial(:work)
-              %div
-                .span-24
-                  .brush-font.title-style
-                    =t.contact
-              %div
-                = partial(:contact)
-    
+      %article
+        .row
+          .col-xs-12
+            =t.work
+        .row
+          .col-xs-12
+            %a{:href => "http://yabsca.heroku.com/"} YABSCA
+            %p
+              =t.yabsca_body
+        .row
+          .col-xs-12
+            %a{:href => "http://www.inversioneshm.com.ve/"} Inversiones HM 2011
+            %p
+              =t.inversioneshm_body
+        .row
+          .col-xs-12
+            %a{:href => "http://code.google.com/p/fuzzyquery/"} Fuzzyquery
+            %p
+              =t.fuzzy_body
+
+        .row
+          .col-xs-12
+            =t.myself_head
+            %p
+              =t.myself_body
+              %br
+              %a{:href => "https://github.com/werner/personal_site"} 
+                =t.source
+
+        .row
+          .col-xs-12
+            =t.php_developer
+            %p  
+              %a{:href => "http://www.alcaldiagirardot.gob.ve/"} Alcaldía de Girardot
+              %br
+              %a{:href => "http://www.minarsa.com.ve/"} Minarsa
+              %br
+
+        .row
+          .col-xs-12
+            =t.ruby_developer
+            %p  
+              %a{:href => "http://www.360releases.com/"} 360releases Ltd.
+              Crowe Horwath Venezuela
+              Quid Consulting
+
+        .row
+          .col-xs-12
+            =t.contact
+            %p
+              =partial(:contact)
+
 
     %script{:src => "http://code.jquery.com/jquery-1.10.1.min.js"}
     %script{:src => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
