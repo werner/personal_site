@@ -7,6 +7,7 @@
 
     %link{:rel => "stylesheet", :href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" }
     %link{:rel => "stylesheet", :href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" }
+    %link{:rel => "stylesheet", :href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" }
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0" }
     %meta{:name => "google-site-verification", :content => "ywM0adqhf8d5P1T2KXTAIzIFF7Mq3SOQUk-lIHQtowo" }
 
@@ -123,6 +124,16 @@
             =t.contact
             %p
               =partial(:contact)
+
+      %footer
+        %a.btn{:href=>"https://www.facebook.com/werner.echezuria"}
+          %i.icon-facebook-sign.icon-2x
+        %a.btn{:href=>"http://twitter.com/wechezuria"}
+          %i.icon-twitter-sign.icon-2x
+        %a.btn{:href=>"http://www.linkedin.com/in/wernerechezuria"}
+          %i.icon-linkedin-sign.icon-2x
+        %a.btn{:href=>"https://github.com/werner"}
+          %i.icon-github-alt.icon-2x
 
 
     %script{:src => "http://code.jquery.com/jquery-1.10.1.min.js"}
