@@ -13,9 +13,37 @@
     %meta{:name => "google-site-verification", :content => "ywM0adqhf8d5P1T2KXTAIzIFF7Mq3SOQUk-lIHQtowo" }
   %body
 
+    %section#page
+
     .container
 
-      %article
+      %header
+        %nav.navbar.navbar-inverse{ :role => "navigation" }
+          .navbar-header
+            %button.navbar-toggle{ "data-toggle" => "collapse", "data-target" => ".navbar-ex1-collapse" }
+              %span.sr-only
+                Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.navbar-brand{ :href => "#" }
+
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                %a{ :href => "#home" }
+                  =t.home
+              %li
+                %a{ :href => "#skills" }
+                  =t.skills
+              %li
+                %a{ :href => "#work" }
+                  =t.work
+              %li
+                %a{ :href => "#contact" }
+                  =t.contact
+
+      %article#home
         .row
           .col-xs-12
             %h1 Werner Echezuría
@@ -23,7 +51,6 @@
           .col-xs-12
             %h3=t.profession
 
-      %article
         .row
           .col-xs-12
             =t.home
@@ -33,7 +60,7 @@
             %p
               =t.home_body
 
-      %article
+      %article#skills
         .row
           .col-xs-12
             =t.skills
@@ -53,7 +80,7 @@
             %p
               =t.javascript_body
 
-      %article
+      %article#work
         .row
           .col-xs-12
             =t.work
@@ -99,6 +126,7 @@
               Crowe Horwath Venezuela
               Quid Consulting
 
+      %article#contact
         .row
           .col-xs-12
             =t.contact
