@@ -4,6 +4,10 @@ body{
 	color: #000;
 }
 
+article {
+  padding-top: 70px;
+}
+
 .logo-name {
     margin-top: 10px;
     margin-left: 20px;
@@ -76,7 +80,3 @@ button.fg-button { width:auto; overflow:visible; }
 
 .fg-buttonset-single .fg-button, 
 .fg-buttonset-multi .fg-button { margin-right: -1px;}
-
-.cufon-loading {
-    visibility: hidden !important;
-}
