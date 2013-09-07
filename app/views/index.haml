@@ -8,6 +8,7 @@
     %link{:rel => "stylesheet", :href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" }
     %link{:rel => "stylesheet", :href => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" }
     %link{:rel => "stylesheet", :href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" }
+    %link{:rel => "stylesheet", :href => "/stylesheets/font-mfizz/font-mfizz.css" }
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0" }
     %meta{:name => "google-site-verification", :content => "ywM0adqhf8d5P1T2KXTAIzIFF7Mq3SOQUk-lIHQtowo" }
 
@@ -58,27 +59,37 @@
       %article#skills
         .row
           .col-xs-12
-            =t.skills
+            %h2
+              %i.icon-gears.icon-large
+              =t.skills
         .row
           .col-xs-12
-            Ruby on Rails
+            %h3
+              %i.icon-ruby-on-rails-alt.icon-large
+              Ruby on Rails
             %p
               =t.ror_body
         .row
           .col-xs-12
-            PHP
+            %h3
+              %i.icon-php-alt.icon-large
+              PHP
             %p
               =t.php_body
         .row
           .col-xs-12
-            JavaScript
+            %h3
+              %i.icon-javascript.icon-large
+              JavaScript
             %p
               =t.javascript_body
 
       %article#work
         .row
           .col-xs-12
-            =t.work
+            %h2
+              %i.icon-wrench.icon-large
+              =t.work
         .row
           .col-xs-12
             %a{:href => "http://yabsca.heroku.com/"} YABSCA
@@ -124,19 +135,21 @@
       %article#contact
         .row
           .col-xs-12
-            =t.contact
+            %h4
+              %i.icon-phone.icon-large
+              =t.contact
             %p
               =partial(:contact)
 
       %footer
         .row
-          %a.awe{:href=>"https://www.facebook.com/werner.echezuria"}
+          %a.awe{:href=>"https://www.facebook.com/werner.echezuria", :target => "_blank"}
             %i.icon-facebook-sign.icon-2x
-          %a.awe{:href=>"http://twitter.com/wechezuria"}
+          %a.awe{:href=>"http://twitter.com/wechezuria", :target => "_blank"}
             %i.icon-twitter-sign.icon-2x
-          %a.awe{:href=>"http://www.linkedin.com/in/wernerechezuria"}
+          %a.awe{:href=>"http://www.linkedin.com/in/wernerechezuria", :target => "_blank"}
             %i.icon-linkedin-sign.icon-2x
-          %a.awe{:href=>"https://github.com/werner"}
+          %a.awe{:href=>"https://github.com/werner", :target => "_blank"}
             %i.icon-github-alt.icon-2x
 
 
