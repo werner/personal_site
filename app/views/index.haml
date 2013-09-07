@@ -90,25 +90,46 @@
             %h2
               %i.icon-wrench.icon-large
               =t.work
+
         .row
           .col-xs-12
-            %a{:href => "http://yabsca.heroku.com/"} YABSCA
+            %h3
+              %i.icon-ruby-on-rails-alt.icon-large
+              =t.ruby_developer
+            %p  
+              %a{:href => "http://www.360releases.com/"} 360releases Ltd.
+              %br
+              Crowe Horwath Venezuela
+              %br
+              Quid Consulting
+
+        .row
+          .col-xs-12
+            %h3
+              %i.icon-money.icon-large
+              %a{:href => "http://yabsca.heroku.com/"} YABSCA
             %p
               =t.yabsca_body
         .row
           .col-xs-12
-            %a{:href => "http://www.inversioneshm.com.ve/"} Inversiones HM 2011
+            %h3
+              %i.icon-archive.icon-large
+              %a{:href => "http://www.inversioneshm.com.ve/"} Inversiones HM 2011
             %p
               =t.inversioneshm_body
         .row
           .col-xs-12
-            %a{:href => "http://code.google.com/p/fuzzyquery/"} Fuzzyquery
+            %h3
+              %i.icon-postgres.icon-large
+              %a{:href => "http://code.google.com/p/fuzzyquery/"} Fuzzyquery
             %p
               =t.fuzzy_body
 
         .row
           .col-xs-12
-            =t.myself_head
+            %h3
+              %i.icon-ruby.icon-large
+                =t.myself_head
             %p
               =t.myself_body
               %br
@@ -117,20 +138,14 @@
 
         .row
           .col-xs-12
-            =t.php_developer
+            %h3
+              %i.icon-php-alt.icon-large
+                =t.php_developer
             %p  
               %a{:href => "http://www.alcaldiagirardot.gob.ve/"} Alcaldía de Girardot
               %br
               %a{:href => "http://www.minarsa.com.ve/"} Minarsa
               %br
-
-        .row
-          .col-xs-12
-            =t.ruby_developer
-            %p  
-              %a{:href => "http://www.360releases.com/"} 360releases Ltd.
-              Crowe Horwath Venezuela
-              Quid Consulting
 
       %article#contact
         .row
