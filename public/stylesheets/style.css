@@ -1,7 +1,23 @@
-body{
+body {
 	font-family: Verdana;
 	color: #FFF;
   background: #2F3238;
+}
+
+article#home {
+  background: #B1009B;
+}
+
+article#skills {
+  background: #009E8E;
+}
+
+article#work {
+  background: #FE6700;
+}
+
+article#contact {
+  background: #7F9F00;
 }
 
 a.awe {
@@ -18,6 +34,10 @@ article {
 
 article#home h1, article#home h3 {
   font-family: 'Bubbler One', sans-serif;
+}
+
+article .row {
+  margin-left: 0px;
 }
 
 @media (max-width: 979px) { 
