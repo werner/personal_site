@@ -4,7 +4,7 @@ body {
 }
 
 article#home {
-  background: #e5c3e1;
+  background: #f1f1f1;
 }
 
 article#skills {
@@ -41,7 +41,7 @@ article .row {
 
 @media (max-width: 979px) { 
   article#home h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
