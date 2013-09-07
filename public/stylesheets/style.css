@@ -1,23 +1,22 @@
 body {
 	font-family: Verdana;
-	color: #FFF;
   background: #2F3238;
 }
 
 article#home {
-  background: #B1009B;
+  background: #e5c3e1;
 }
 
 article#skills {
-  background: #009E8E;
+  background: #d8e898;
 }
 
 article#work {
-  background: #FE6700;
+  background: #f8b283;
 }
 
 article#contact {
-  background: #7F9F00;
+  background: #fff99b;
 }
 
 a.awe {
