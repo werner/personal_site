@@ -103,6 +103,8 @@ textarea {
 fieldset {
     padding: 1em;    
 }
+
 .credits {
   color: #FFFFFF;
+  font-size: 10px;
 }

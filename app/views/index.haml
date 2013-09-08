@@ -48,18 +48,21 @@
 
       %article#home
         .row
-          .col-xs-6
+          .col-lg-6.text-center
             %h1 
               Werner Echezuría
-          .col-xs-6
+          .col-lg-6.text-center
             %img.img-responsive{ :src => "/images/ruby.jpg" }
         .row
-          .col-xs-12
+          .col-lg-12.text-center
             %h3=t.profession
 
       %article#skills
         .row
-          .col-xs-6
+          .col-lg-1
+          .col-lg-3
+            %img.img-responsive.img-thumbnail{ :src => "/images/books.jpg" }
+          .col-xs-8
             .row
               %h2
                 %i.icon-gears.icon-large
@@ -76,19 +79,18 @@
                   PHP
                 %p
                   =t.php_body
-          .col-xs-6
-            %img.img-responsive.img-thumbnail{ :src => "/images/books.jpg" }
-        .row
-          .col-xs-6
-            %h3
-              %i.icon-javascript.icon-large
-              JavaScript
-            %p
-              =t.javascript_body
+              %h3
+                %i.icon-javascript.icon-large
+                JavaScript
+              %p
+                =t.javascript_body
 
       %article#work
         .row
-          .col-xs-6
+          .col-lg-1
+          .col-lg-3
+            %img.img-responsive.img-thumbnail{ :src => "/images/work.jpg" }
+          .col-xs-8
             .row
               %h2
                 %i.icon-wrench.icon-large
@@ -102,55 +104,51 @@
                 Crowe Horwath Venezuela
                 %br
                 Quid Consulting
-          .col-xs-6
-            %img.img-responsive.img-thumbnail{ :src => "/images/work.jpg" }
 
-        .row
-          .col-xs-6
-            %h3
-              %i.icon-money.icon-large
-              %a{:href => "http://yabsca.heroku.com/"} YABSCA
-            %p
-              =t.yabsca_body
-        .row
-          .col-xs-6
-            %h3
-              %i.icon-archive.icon-large
-              %a{:href => "http://www.inversioneshm.com.ve/"} Inversiones HM 2011
-            %p
-              =t.inversioneshm_body
-        .row
-          .col-xs-6
-            %h3
-              %i.icon-postgres.icon-large
-              %a{:href => "http://code.google.com/p/fuzzyquery/"} Fuzzyquery
-            %p
-              =t.fuzzy_body
+            .row
+              %h3
+                %i.icon-money.icon-large
+                %a{:href => "http://yabsca.heroku.com/"} YABSCA
+              %p
+                =t.yabsca_body
 
-        .row
-          .col-xs-6
-            %h3
-              %i.icon-ruby.icon-large
-                =t.myself_head
-            %p
-              =t.myself_body
-              %br
-              %a{:href => "https://github.com/werner/personal_site"} 
-                =t.source
+            .row
+              %h3
+                %i.icon-archive.icon-large
+                %a{:href => "http://www.inversioneshm.com.ve/"} Inversiones HM 2011
+              %p
+                =t.inversioneshm_body
 
-        .row
-          .col-xs-6
-            %h3
-              %i.icon-php-alt.icon-large
-                =t.php_developer
-            %p  
-              %a{:href => "http://www.alcaldiagirardot.gob.ve/"} Alcaldía de Girardot
-              %br
-              %a{:href => "http://www.minarsa.com.ve/"} Minarsa
-              %br
+            .row
+              %h3
+                %i.icon-postgres.icon-large
+                %a{:href => "http://code.google.com/p/fuzzyquery/"} Fuzzyquery
+              %p
+                =t.fuzzy_body
+
+            .row
+              %h3
+                %i.icon-ruby.icon-large
+                  =t.myself_head
+              %p
+                =t.myself_body
+                %br
+                %a{:href => "https://github.com/werner/personal_site"} 
+                  =t.source
+
+            .row
+              %h3
+                %i.icon-php-alt.icon-large
+                  =t.php_developer
+              %p  
+                %a{:href => "http://www.alcaldiagirardot.gob.ve/"} Alcaldía de Girardot
+                %br
+                %a{:href => "http://www.minarsa.com.ve/"} Minarsa
+                %br
 
       %article#contact
         .row
+          .col-xs-1
           .col-xs-10
             %h2
               %i.icon-phone.icon-large
