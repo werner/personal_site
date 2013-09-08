@@ -6,7 +6,7 @@ contact: Contacto
 home_title: Descripción
 home_body: Programador de Aplicaciones para la Web y Móviles
 ror_body: Desarrollo de aplicaciones web usando metodologías ágiles.
-php_body: experiencia en aplicaciones con CodeIgniter y Wordpress.
+php_body: Experiencia en aplicaciones con CodeIgniter y Wordpress.
 c_sharp_body: Aplicaciones de Escritorio y Sitios ASP .NET.
 javascript_body: He trabajado con JQuery, ExtJS y CoffeeScript.
 yabsca_body: "Una aplicación para Cuadro de Mando Integral hecha en Ruby on Rails y ExtJS. <br /> usuario: admin, contraseña: 12345."
@@ -23,3 +23,5 @@ send_name: Enviar
 source: Código Fuente
 credits: Créditos
 credits_ruby: La imagen del rubí es cortesía de Boykung / FreeDigitalPhotos.net
+credits_book: La imagen de los libros es cortesía de ddpavumba / FreeDigitalPhotos.net
+credits_gears: La imagen de los engranajes es cortesía de digitalart / FreeDigitalPhotos.net

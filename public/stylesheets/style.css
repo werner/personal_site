@@ -8,11 +8,11 @@ article#home {
 }
 
 article#skills {
-  background: #d8e898;
+  background: #fbffeb;
 }
 
 article#work {
-  background: #f8b283;
+  background: #fff2e0;
 }
 
 article#contact {
@@ -29,10 +29,15 @@ article {
   padding: 100px 0;
   position: relative;
   z-index: 99;
+  border-top: 5px solid #6D2464;
 }
 
 article#home h1, article#home h3 {
   font-family: 'Bubbler One', sans-serif;
+}
+
+article#skills h2, article#work h2, article#contact h2 {
+  font-family: 'Berkshire Swash', sans-serif;
 }
 
 article .row {
