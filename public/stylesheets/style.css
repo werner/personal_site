@@ -98,28 +98,6 @@ textarea {
 fieldset {
     padding: 1em;    
 }
-
-a.fg-button:visited  {
-  color: #2e6e9e;
+.credits {
+  color: #FFFFFF;
 }
-
-.fg-button{ 
-  outline: 0;
-  margin:0 4px 0 0; 
-  padding: .4em 1em; 
-  text-decoration:none !important; 
-  cursor:pointer; 
-  position: relative; 
-  text-align: center; 
-  zoom: 1; 
-}
-
-.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
-
-a.fg-button { float:left;font-size: 1em;   }
-
-/* remove extra button width in IE */
-button.fg-button { width:auto; overflow:visible; }
-
-.fg-buttonset-single .fg-button, 
-.fg-buttonset-multi .fg-button { margin-right: -1px;}

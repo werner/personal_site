@@ -60,26 +60,29 @@
 
       %article#skills
         .row
-          .col-xs-12
-            %h2
-              %i.icon-gears.icon-large
-              =t.skills
+          .col-xs-2
+          .col-xs-6
+            .row
+              %h2
+                %i.icon-gears.icon-large
+                =t.skills
+              .row
+                %h3
+                  %i.icon-ruby-on-rails-alt.icon-large
+                  Ruby on Rails
+                %p
+                  =t.ror_body
+              .row
+                %h3
+                  %i.icon-php-alt.icon-large
+                  PHP
+                %p
+                  =t.php_body
+          .col-xs-4
+            %img.img-responsive.img-thumbnail{ :src => "/images/books.jpg" }
         .row
-          .col-xs-12
-            %h3
-              %i.icon-ruby-on-rails-alt.icon-large
-              Ruby on Rails
-            %p
-              =t.ror_body
-        .row
-          .col-xs-12
-            %h3
-              %i.icon-php-alt.icon-large
-              PHP
-            %p
-              =t.php_body
-        .row
-          .col-xs-12
+          .col-xs-2
+          .col-xs-6
             %h3
               %i.icon-javascript.icon-large
               JavaScript
@@ -169,7 +172,13 @@
               %i.icon-linkedin-sign.icon-2x
             %a.awe{:href=>"https://github.com/werner", :target => "_blank"}
               %i.icon-github-alt.icon-2x
-
+        .credits
+          .row
+            .col-xs-12
+              =t.credits
+          .row
+            .col-xs-12
+              =t.credits_ruby
 
     %script{:src => "http://code.jquery.com/jquery-1.10.1.min.js"}
     %script{:src => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
