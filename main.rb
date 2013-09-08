@@ -18,9 +18,9 @@ class Main < Sinatra::Base
   R18n.default_places { './config/locales' }
   
   before do
-    session[:locale] = params[:locale] if params[:locale]
+    session[:locale] = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
   end
-  
+
   #Conf for minify
   set :js_path, 'public/javascripts'
   set :js_url,  '/javascripts'
