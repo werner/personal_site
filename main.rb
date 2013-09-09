@@ -69,6 +69,7 @@ class Main < Sinatra::Base
                 :from => params[:mail],
                 :subject => 'Name: ' + params[:name] + ', send it from the personal site ',
                 :body =>  params[:body]
+      redirect "/"
     else
       flash[:warning] = validations
       redirect "/#contact"
