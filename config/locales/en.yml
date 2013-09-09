@@ -28,3 +28,4 @@ credits_gears: The gears image is courtesy of digitalart / FreeDigitalPhotos.net
 val_email: "Introduce an email"
 val_name: "Introduce a name"
 val_msg: "Introduce a message"
+val_email_format: "Wrong email format"

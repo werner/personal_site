@@ -61,8 +61,10 @@ class Main < Sinatra::Base
     validations = {:mail => t.val_email, :name => t.val_name, :body => t.val_msg}.map do |key, value|
                     value if params[key].empty?
                   end
+
+    validations.push t.val_email_format unless params[:mail] =~ /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/
    
-    if validations.empty?
+    if validations.compact.empty?
       Pony.mail :to => 'werner_a_e@yahoo.es',
                 :from => params[:mail],
                 :subject => 'Name: ' + params[:name] + ', send it from the personal site ',

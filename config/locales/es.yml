@@ -28,3 +28,4 @@ credits_gears: La imagen de los engranajes es cortesía de digitalart / FreeDigi
 val_email: "Introduzca un correo"
 val_name: "Introduzca un nombre"
 val_msg: "Introduzca un mensaje"
+val_email_format: "Formato de correo electrónico incorrecto"
