@@ -1,7 +1,5 @@
 js:
   base:
-    - jquery.form.js
-    - app.js
     - modernizr.js
     - respond.js
     

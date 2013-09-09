@@ -5,6 +5,7 @@ require 'pony'
 require 'sinatra/minify'
 require 'sinatra/r18n'
 require './lib/partials'
+require 'debugger'
 
 class Main < Sinatra::Base
   register Barista::Integration::Sinatra
@@ -39,23 +40,33 @@ class Main < Sinatra::Base
   end
   
   post '/contact' do
-    Pony.options = {
-      :via => :smtp,
-      :via_options => {
-        :address => 'smtp.sendgrid.net',
-        :port => '587',
-        :domain => 'heroku.com',
-        :user_name => ENV['SENDGRID_USERNAME'],
-        :password => ENV['SENDGRID_PASSWORD'],
-        :authentication => :plain,
-        :enable_starttls_auto => true
+    begin
+      Pony.options = {
+        :via => :smtp,
+        :via_options => {
+          :address => 'smtp.sendgrid.net',
+          :port => '587',
+          :domain => 'heroku.com',
+          :user_name => ENV['SENDGRID_USERNAME'],
+          :password => ENV['SENDGRID_PASSWORD'],
+          :authentication => :plain,
+          :enable_starttls_auto => true
+        }
       }
-    }
-   
-    Pony.mail :to => 'werner_a_e@yahoo.es',
-              :from => params[:message][:mail],
-              :subject => 'Name: ' + params[:message][:name] + ', send it from the personal site ',
-              :body =>  params[:message][:body]
+     
+      if params.empty?
+        redirect '/'
+        puts "params empty"
+      else
+        Pony.mail :to => 'werner_a_e@yahoo.es',
+                  :from => params[:message][:mail],
+                  :subject => 'Name: ' + params[:message][:name] + ', send it from the personal site ',
+                  :body =>  params[:message][:body]
+      end
+    rescue Exception => e
+      puts e.message
+      puts e.backtrace.inspect
+    end
   end
 
 end
