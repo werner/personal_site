@@ -1,4 +1,5 @@
--unless flash[:warning].compact.empty?
+-flashes = (flash[:warning].compact rescue [])
+-unless flashes.empty?
   .alert.alert-warning
     =flash[:warning].compact.join("<br />")
 
