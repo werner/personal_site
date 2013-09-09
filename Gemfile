@@ -7,5 +7,5 @@ gem 'pony'
 gem 'barista'
 gem 'sinatra-minify'
 gem 'sinatra-r18n'
-
+gem 'sinatra-flash'
 gem 'debugger'

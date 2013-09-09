@@ -1,18 +1,22 @@
-%form{:name => "form", :id => "form", :action => "/contact", :method => "post", :enctype => "text/plain"}
+-unless flash.empty?
+  .alert.alert-warning
+    =flash[:warning].compact.join("<br />")
+
+%form{:name => "form", :id => "form", :action => "/contact", :method => "post"}
   %fieldset
-    %label{:for => "message[name]"} 
+    %label{:for => "name"} 
       =t.name
     %br
-    %input{:type => "text", :name => "message[name]", :id => "message[name]", :class => "form-control"}
+    %input{:type => "text", :name => "name", :id => "name", :class => "form-control"}
     %br
-    %label{:for => "message[mail]"} 
+    %label{:for => "mail"} 
       =t.email
     %br
-    %input{:type => "text", :name => "message[mail]", :id => "message[mail]", :class => "form-control"}
+    %input{:type => "text", :name => "mail", :id => "mail", :class => "form-control"}
     %br
-    %label{:for => "message[body]"} 
+    %label{:for => "body"} 
       =t.msg
     %br
-    %textarea{:name => "message[body]", :id => "message[body]", :class => "form-control"}
+    %textarea{:name => "body", :id => "body", :class => "form-control"}
     %br
     %input{:type => "submit", :value => t.send_name, :class => "btn btn-primary btn-block"}

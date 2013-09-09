@@ -25,3 +25,6 @@ credits: Credits
 credits_ruby: The ruby image is courtesy of Boykung / FreeDigitalPhotos.net
 credits_book: The book image is courtesy of ddpavumba / FreeDigitalPhotos.net
 credits_gears: The gears image is courtesy of digitalart / FreeDigitalPhotos.net
+val_email: "Introduce an email"
+val_name: "Introduce a name"
+val_msg: "Introduce a message"

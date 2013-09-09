@@ -25,3 +25,6 @@ credits: Créditos
 credits_ruby: La imagen del rubí es cortesía de Boykung / FreeDigitalPhotos.net
 credits_book: La imagen de los libros es cortesía de ddpavumba / FreeDigitalPhotos.net
 credits_gears: La imagen de los engranajes es cortesía de digitalart / FreeDigitalPhotos.net
+val_email: "Introduzca un correo"
+val_name: "Introduzca un nombre"
+val_msg: "Introduzca un mensaje"
