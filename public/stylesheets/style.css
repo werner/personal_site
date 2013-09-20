@@ -48,6 +48,9 @@ article .row {
   article#home h1 {
     font-size: 40px;
   }
+  img.img-responsive {
+    margin-left: -10px !important;
+  }
 }
 
 @media (min-width: 980px) { 
