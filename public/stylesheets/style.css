@@ -1,11 +1,11 @@
 body {
 	font-family: Verdana;
-  background: #2F3238;
+  background: #FFF;
   color: #000;
 }
 
-body.mercado_libre {
-  background: #FFF !important;
+body.personal_site {
+  background: #2F3238 !important;
 }
 
 article#home {
