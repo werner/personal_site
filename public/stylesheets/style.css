@@ -4,6 +4,10 @@ body {
   color: #000;
 }
 
+body.mercado_libre {
+  background: #FFF !important;
+}
+
 article#home {
   background: #f1f1f1;
 }
