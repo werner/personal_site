@@ -8,8 +8,9 @@ home_body: Web and Mobile Developer.
 ror_body: Develop web applications using Agile Methodologies.
 php_body: Experience in Wordpress and CodeIgniter applications.
 c_sharp_body: Desktop software and ASP .NET sites.
-javascript_body: I've worked with JQuery, ExtJS and CoffeeScript.
+javascript_body: JQuery, ExtJS and CoffeeScript.
 yabsca_body: "A Balanced Scorecard Application built on Ruby on Rails and ExtJS. <br /> user: admin, password: 12345."
+inmail_body: "A Document Management System built in Ruby on Rails 4 and Ruby 2.0. <br /> user: admin, password: 12345."
 inversioneshm_body: Wordpress Site.
 fuzzy_body: PostgreSQL extension.
 myself_head: This Site
@@ -29,3 +30,4 @@ val_email: "Introduce an email"
 val_name: "Introduce a name"
 val_msg: "Introduce a message"
 val_email_format: "Wrong email format"
+source_code: "Source Code"

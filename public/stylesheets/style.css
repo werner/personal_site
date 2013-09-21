@@ -1,6 +1,7 @@
 body {
 	font-family: Verdana;
   background: #2F3238;
+  color: #000;
 }
 
 article#home {
@@ -25,8 +26,7 @@ a.awe {
 }
 
 article {
-  padding-top: 70px;
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   z-index: 99;
   border-top: 5px solid #6D2464;
@@ -110,4 +110,13 @@ fieldset {
 .credits {
   color: #FFFFFF;
   font-size: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  color: #000;
 }

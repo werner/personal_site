@@ -8,8 +8,9 @@ home_body: Programador de Aplicaciones para la Web y Móviles
 ror_body: Desarrollo de aplicaciones web usando metodologías ágiles.
 php_body: Experiencia en aplicaciones con CodeIgniter y Wordpress.
 c_sharp_body: Aplicaciones de Escritorio y Sitios ASP .NET.
-javascript_body: He trabajado con JQuery, ExtJS y CoffeeScript.
+javascript_body: JQuery, ExtJS y CoffeeScript.
 yabsca_body: "Una aplicación para Cuadro de Mando Integral hecha en Ruby on Rails y ExtJS. <br /> usuario: admin, contraseña: 12345."
+inmail_body: "Sistema de Manejo de Documentos hecho en Ruby on Rails 4 y Ruby 2.0. <br /> usuario: admin, contraseña: 12345."
 inversioneshm_body: Sitio Wordpress.
 fuzzy_body: Extensión PostgreSQL.
 myself_head: Este Sitio
@@ -29,3 +30,4 @@ val_email: "Introduzca un correo"
 val_name: "Introduzca un nombre"
 val_msg: "Introduzca un mensaje"
 val_email_format: "Formato de correo electrónico incorrecto"
+source_code: "Código Fuente"

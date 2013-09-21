@@ -67,18 +67,20 @@
                 %i.icon-gears.icon-large
                 =t.skills
               .row
-                %h3
+                &nbsp;
+              .row
+                .subtitle
                   %i.icon-ruby-on-rails-alt.icon-large
                   Ruby on Rails
                 %p
                   =t.ror_body
               .row
-                %h3
+                .subtitle
                   %i.icon-php-alt.icon-large
                   PHP
                 %p
                   =t.php_body
-              %h3
+              .subtitle
                 %i.icon-javascript.icon-large
                 JavaScript
               %p
@@ -94,55 +96,72 @@
               %h2
                 %i.icon-wrench.icon-large
                 =t.work
-              %h3
+              .row
+                &nbsp;
+              .subtitle
                 %i.icon-ruby-on-rails-alt.icon-large
                 =t.ruby_developer
               %p  
-                %a{:href => "http://www.360releases.com/"} 360releases Ltd.
+                %a{:href => "http://www.360releases.com/", :target => "_blank"} 360releases Ltd.
                 %br
                 Crowe Horwath Venezuela
                 %br
                 Quid Consulting
 
             .row
-              %h3
+              .subtitle
                 %i.icon-money.icon-large
-                %a{:href => "http://yabsca.heroku.com/"} YABSCA
+                %a{:href => "http://yabsca.herokuapp.com/", :target => "_blank"} YABSCA
+              (
+              %a{:href => "https://github.com/werner/yabsca", :target => "_blank"}
+                =t.source_code
+              )
               %p
                 =t.yabsca_body
 
             .row
-              %h3
+              .subtitle
+                %i.icon-envelope.icon-large
+                %a{:href => "http://inmailing.herokuapp.com/", :target => "_blank"} Inmailing
+              (
+              %a{:href => "https://github.com/werner/in_mailing", :target => "_blank"}
+                =t.source_code
+              )
+              %p
+                =t.inmail_body
+
+            .row
+              .subtitle
                 %i.icon-archive.icon-large
-                %a{:href => "http://www.inversioneshm.com.ve/"} Inversiones HM 2011
+                %a{:href => "http://www.inversioneshm.com.ve/", :target => "_blank"} Inversiones HM 2011
               %p
                 =t.inversioneshm_body
 
             .row
-              %h3
+              .subtitle
                 %i.icon-postgres.icon-large
-                %a{:href => "http://code.google.com/p/fuzzyquery/"} Fuzzyquery
+                %a{:href => "http://code.google.com/p/fuzzyquery/", :target => "_blank"} Fuzzyquery
               %p
                 =t.fuzzy_body
 
             .row
-              %h3
+              .subtitle
                 %i.icon-ruby.icon-large
-                  =t.myself_head
+                =t.myself_head
               %p
                 =t.myself_body
                 %br
-                %a{:href => "https://github.com/werner/personal_site"} 
+                %a{:href => "https://github.com/werner/personal_site", :target => "_blank"} 
                   =t.source
 
             .row
-              %h3
+              .subtitle
                 %i.icon-php-alt.icon-large
-                  =t.php_developer
+                =t.php_developer
               %p  
-                %a{:href => "http://www.alcaldiagirardot.gob.ve/"} Alcaldía de Girardot
+                %a{:href => "http://www.alcaldiagirardot.gob.ve/", :target => "_blank"} Alcaldía de Girardot
                 %br
-                %a{:href => "http://www.minarsa.com.ve/"} Minarsa
+                %a{:href => "http://www.minarsa.com.ve/", :target => "_blank"} Minarsa
                 %br
 
       %article#contact
