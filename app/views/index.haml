@@ -147,21 +147,23 @@
             .row
               .subtitle
                 %i.icon-ruby.icon-large
-                =t.myself_head
+                %a{:href => "http://werner.herokuapp.com/", :target => "_blank"}
+                  =t.myself_head
+              (
+              %a{:href => "https://github.com/werner/personal_site", :target => "_blank"} 
+                =t.source
+              )
               %p
                 =t.myself_body
-                %br
-                %a{:href => "https://github.com/werner/personal_site", :target => "_blank"} 
-                  =t.source
 
             .row
               .subtitle
                 %i.icon-php-alt.icon-large
                 =t.php_developer
               %p  
-                %a{:href => "http://www.alcaldiagirardot.gob.ve/", :target => "_blank"} Alcaldía de Girardot
+                =t.city_hall
                 %br
-                %a{:href => "http://www.minarsa.com.ve/", :target => "_blank"} Minarsa
+                =t.minarsa
                 %br
 
       %article#contact
