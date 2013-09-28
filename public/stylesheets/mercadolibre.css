@@ -1,0 +1,47 @@
+
+.title {
+  font-family: 'Voltaire', cursive;
+  font-size: 40px;
+}
+
+.subtitle {
+  font-family: 'Berkshire Swash', sans-serif;
+  font-size: 30px;
+}
+
+.container {
+  width: 600px;
+  float: left;
+}
+
+.image {
+  float: left;
+}
+
+.image img {
+  height: 155px;
+  width: 205px;
+}
+
+.thumbnail {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.parrafos {
+  font-family: 'Verdana', cursive;
+  font-size: 20px;
+}
+
+a {
+  color: #7f9f00;
+}
+
